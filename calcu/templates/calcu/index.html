@@ -3,46 +3,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-h1 {
-    color: cyan;
-    font-family: 'Footlight MT Light';
-    font-size: 45pt;
-}
 
-.button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  position: relative;
-  margin-top: 30%;
-}
+<link rel="stylesheet" type="text/css" href="{% static 'css/calcu.css' %}">
 
-.button:hover {background-color: #3e8e41}
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-</style>
     <title>Calculator</title>
 </head>
-<body background="{% static "2.jpg" %}">
-    <center><h1>INSERT THE CALCULATOR HERE</h1></center>
+
+
+<body background="{% static 'hello.jpg' %}">
+
+<div class = "buttons">
+	<ul>
+		<li><form name="form">
+  				<input type="text" id="ans" name="ans" disabled>
+			</form>
+		<li>
+			<button onclick= "WRITE('7')">7</button>
+			<button onclick= "WRITE('8')">8</button>
+			<button onclick= "WRITE('9')">9</button>
+			<button onclick= "op('*')">*</button>
+		</li>
+		<li>
+			<button onclick= "WRITE('4')">4</button>
+			<button onclick= "WRITE('5')">5</button>
+			<button onclick= "WRITE('6')">6</button>
+			<button onclick= "op('/')">/</button>
+		</li>
+		<li>
+			<button onclick= "WRITE('1')">1</button>
+			<button onclick= "WRITE('2')">2</button>
+			<button onclick= "WRITE('3')">3</button>
+			<button onclick= "op('-')">-</button>
+		</li>
+		<li>
+			<button onclick= "WRITE('0')">0</button>
+			<button onclick= "document.form.ans.value=lastAns">Ans</button>
+			<button onclick= "eq()">=</button>
+			<button onclick= "op('+')">+</button>
+		</li>
+		<li>
+			<button onclick= "back()">&larr;</button>
+			<button onclick= "C()">C</button>
+			
+		</li>
+	</ul>
+</div>
+
     <a href="/" title="Back to the Home Page"><b><font color=#ff0066><button class="button">Back to HOME</button>
+    <script type="text/javascript" src="{% static 'js/calcu.js' %}"></script>
+
 </body>
 </html>
