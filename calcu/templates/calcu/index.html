@@ -1,9 +1,48 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+body {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: cyan;
+    font-family: 'Footlight MT Light';
+    font-size: 45pt;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: relative;
+  margin-top: 30%;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
     <title>Calculator</title>
 </head>
-<body>
-    <h1>INSERT CALCU HERE</h1>
+<body background="{% static "2.jpg" %}">
+    <center><h1>INSERT THE CALCULATOR HERE</h1></center>
+    <a href="/" title="Back to the Home Page"><b><font color=#ff0066><button class="button">Back to HOME</button>
 </body>
 </html>

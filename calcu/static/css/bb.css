@@ -1,0 +1,62 @@
+h1 {
+    color: #ff751a;
+    font-family: 'Footlight MT Light';
+    font-size: 45pt;
+}
+
+p {
+    font-family: 'MV Boli';
+    font-size: 24px;
+    color: #ff4d94;
+    margin-top: -10px;
+}
+
+body {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+    background-color: none;
+}
+
+ul ul {
+    position: relative;
+    display: none;
+    left: 0;
+}
+
+#nav {
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin-left: -375px;
+    width: 750px;
+    list-style: none;
+}
+
+#nav a {
+    display: inline;
+}
+
+li {
+    position: relative;
+    float: left;
+}
+
+li a {
+    color: black;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-family: 'Tahoma';
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color: #ff80ff;
+}
